@@ -6,34 +6,34 @@ from django.http import HttpResponseRedirect
 
 class HomePageView(ListView):
     model = Post
-    template_name = 'home.html'
+    template_name = 'pages/home.html'
     context_object_name = 'posts_list'
     paginate_by = 3
 
 class ArticlesPageView(ListView):
     model = Post
-    template_name = 'articles.html'
+    template_name = 'pages/articles.html'
     context_object_name = 'articles_list'
 
 class DetailArticle(DetailView):
     model = Post
-    template_name = 'articles.html'
+    template_name = 'pages/articles.html'
     context_object_name = 'articles'
 
 
 class ClassesView(ListView):
     model = Post
-    template_name = 'classes.html'
+    template_name = 'pages/classes.html'
     context_object_name = 'classes_list'
 
 class FuncView(ListView):
     model = Post
-    template_name = 'FM.html'
+    template_name = 'pages/FM.html'
     context_object_name = 'fm_list'
 
 class SearchResultsView(ListView):
     model = Post
-    template_name = 'search.html'
+    template_name = 'pages/search.html'
 
     def get_queryset(self):
         query = self.request.GET.get('q')
