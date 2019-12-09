@@ -26,7 +26,7 @@
          {% language 'ru' %}
         <small class="text-muted">{{post.date}}</small>
          {% endlanguage %}
-         <p class="card-text">{{ post.text|truncatewords:"30"}}</p>
+         <p class="card-text">{{ post.decs|truncatewords:"30"}}</p>
         <a href="{% url 'articles' post.pk %}" class="btn btn-outline-primary">Подробнее</a>
       </div>
     </div>

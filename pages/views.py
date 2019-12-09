@@ -31,6 +31,11 @@ class FuncView(ListView):
     template_name = 'pages/FM.html'
     context_object_name = 'fm_list'
 
+class OtherView(ListView):
+    model = Post
+    template_name = 'pages/other.html'
+    context_object_name = 'other_list'
+
 class SearchResultsView(ListView):
     model = Post
     template_name = 'pages/search.html'

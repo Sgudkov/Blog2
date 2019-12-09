@@ -6,7 +6,7 @@
     {% for post in object_list %}
         <ul class="list-group">
         <li class="list-group-item">{{ post.head }}</li>
-        <li class="list-group-item">{{ post.text }}</li>
+        <li class="list-group-item">{{ post.decs }}</li>
          <a href="{% url 'articles' post.pk %}" class="btn btn-outline-primary btn-sm">Подробнее</a>
         </ul>
     {% endfor %}
