@@ -1,0 +1,3 @@
+__pycache__/
+mysite/wsgi.py
+mysite/settings.py
