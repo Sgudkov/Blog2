@@ -1,4 +1,5 @@
 __pycache__/
 mysite/mysite/
+mysite/
 mysite/wsgi.py
 mysite/settings.py
