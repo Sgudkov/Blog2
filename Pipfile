@@ -16,7 +16,7 @@ sqlparse = "==0.3.0"
 virtualenv = "==16.7.8"
 virtualenvwrapper-win = "==1.2.5"
 whitenoise = "==4.1.4"
-Django = "==2.2.7"
+Django = "==2.2.13"
 
 [requires]
 python_version = "3.7"
